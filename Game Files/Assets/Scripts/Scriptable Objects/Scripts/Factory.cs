@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class Factory : ScriptableObject
 {
-	void Update()
-	{
-
-	}
+    public int amountToIncrease;
+    public float timeBetweenIncrease;
+    public string factoryType;
 }
