@@ -4,11 +4,13 @@ using TMPro;
 public class ClickCounter : MonoBehaviour
 {
     private int clickCount = 0;
-    private int totalCount = 0;
-
-    public Animator animator; // Reference to the Animator component for playing animations
+    [SerializeField]
+    private Animator animator; // Reference to the Animator component for playing animations
+    [SerializeField]
     public int clickThreshold = 4; // Number of clicks required to play the animation
+    [SerializeField]
     public TextMeshProUGUI clickCountText; // Reference to the TextMeshPro Text component
+
     private void Start()
     {
         // Play the animation
@@ -24,12 +26,11 @@ public class ClickCounter : MonoBehaviour
         {
             // Increment the click count and total count
             clickCount++;
-            totalCount++;
-
+            CounterManager.Instance.TotalCounter++;
             // Update the TextMeshPro Text component with the total count
             if (clickCountText != null)
             {
-                clickCountText.text = "Clicks: " + totalCount;
+                clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
             }
 
             // Check if the click count reaches the threshold
