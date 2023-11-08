@@ -15,11 +15,10 @@ public class Scoring : MonoBehaviour
     public Color boxColor = new Color();
     // This method will be called whenever a value is changed in the Inspector
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("Entered trigger");
         Debug.LogWarning("Triggered ->" + this.boxColor);
-
         switch(this.boxColor)
         {
             case Color.Blue:
@@ -35,7 +34,8 @@ public class Scoring : MonoBehaviour
                 Debug.Log("Orange");
                 break;
         }
-        if (other.CompareTag("Ball"))
-            Destroy(other.gameObject);
+        if (other.gameObject.CompareTag("Ball"))
+            Debug.Log("Contact");
+        //Destroy(other.gameObject);
     }
 }
