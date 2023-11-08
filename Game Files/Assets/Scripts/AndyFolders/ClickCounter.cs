@@ -10,6 +10,10 @@ public class ClickCounter : MonoBehaviour
     public int clickThreshold = 4; // Number of clicks required to play the animation
     [SerializeField]
     public TextMeshProUGUI clickCountText; // Reference to the TextMeshPro Text component
+    [SerializeField]
+    public TextMeshProUGUI currencyCountText; // Reference to the TextMeshPro Text component for currency
+
+    int currency = 0;
 
     private void Start()
     {
@@ -27,11 +31,14 @@ public class ClickCounter : MonoBehaviour
             // Increment the click count and total count
             clickCount++;
             CounterManager.Instance.TotalCounter++;
+
             // Update the TextMeshPro Text component with the total count
             if (clickCountText != null)
             {
                 clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
             }
+
+            
 
             // Check if the click count reaches the threshold
             if (clickCount >= clickThreshold)
@@ -41,11 +48,19 @@ public class ClickCounter : MonoBehaviour
 
                 // Reset the click count
                 clickCount = 0;
+
+                GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency++;
+
             }
             else
             {
                 animator.SetBool("Start", true);
                 animator.SetBool("End", false);
+            }
+
+            if (currencyCountText != null)
+            {
+                currencyCountText.text = "Currrency: " + GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency;
             }
         }
     }
