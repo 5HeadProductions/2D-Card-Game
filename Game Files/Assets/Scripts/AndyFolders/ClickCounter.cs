@@ -8,8 +8,8 @@ public class ClickCounter : MonoBehaviour
     private Animator animator; // Reference to the Animator component for playing animations
     [SerializeField]
     public int clickThreshold = 4; // Number of clicks required to play the animation
-    [SerializeField]
-    public TextMeshProUGUI clickCountText; // Reference to the TextMeshPro Text component
+    //[SerializeField]
+    //public TextMeshProUGUI clickCountText; // Reference to the TextMeshPro Text component
 
     private void Start()
     {
@@ -26,12 +26,12 @@ public class ClickCounter : MonoBehaviour
         {
             // Increment the click count and total count
             clickCount++;
-            CounterManager.Instance.TotalCounter++;
+            //CounterManager.Instance.TotalCounter++;
             // Update the TextMeshPro Text component with the total count
-            if (clickCountText != null)
-            {
-                clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
-            }
+            //if (clickCountText != null)
+            //{
+            //    clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
+            //}
 
             // Check if the click count reaches the threshold
             if (clickCount >= clickThreshold)
