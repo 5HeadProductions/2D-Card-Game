@@ -6,7 +6,7 @@ public class CardPool : MonoBehaviour
 {
     public List<GameObject> cardsObjects;
     List<int> chanceArray;
-    GameObject startingCard;
+    public GameObject startingCard;
 
     private void Start()
     {

@@ -1,67 +1,88 @@
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using System.Collections;
 
 public class ClickCounter : MonoBehaviour
 {
     private int clickCount = 0;
+    private bool canClick = true;
+
     [SerializeField]
     private Animator animator; // Reference to the Animator component for playing animations
     [SerializeField]
-    public int clickThreshold = 4; // Number of clicks required to play the animation
+    [Tooltip("Number of clicks required to gain money from the card completing.")]
+    public int clickThreshold = 4;
     [SerializeField]
-    public TextMeshProUGUI clickCountText; // Reference to the TextMeshPro Text component
+    [Tooltip("Component displaying clicks (to be deleted for actual game).")]
+    public TextMeshProUGUI clickCountText;
     [SerializeField]
-    public TextMeshProUGUI currencyCountText; // Reference to the TextMeshPro Text component for currency
+    [Tooltip("Component displaying the currency")]
+    public TextMeshProUGUI currencyCountText;
+    [SerializeField]
+    [Tooltip("Component that contains the cards coming up")]
+    public CardPool cardPool;
 
-    int currency = 0;
-
-    private void Start()
-    {
-        // Play the animation
-        if (animator != null)
-        {
-            animator.SetBool("Start", true); // "PlayAnimation" is the trigger parameter in the Animator controller
-        }
-    }
     private void Update()
     {
-        // Check for left mouse button click
-        if (Input.GetMouseButtonDown(0))
+        //Checks if the mouse click and if we allow the click to happen
+        if (Input.GetMouseButtonDown(0) && canClick)
         {
-            // Increment the click count and total count
             clickCount++;
             CounterManager.Instance.TotalCounter++;
 
-            // Update the TextMeshPro Text component with the total count
+            // Update the Text components with the total counts
             if (clickCountText != null)
             {
                 clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
             }
+            if (currencyCountText != null)
+            {
+                currencyCountText.text = "Currrency: " + GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency;
+            }
 
-            
+            //Sets the card animation into play depending on which click it is
+            if (clickCount % 4 == 1)
+            {
+                animator.SetBool("emptyToTl", true);
+            }
+            else if (clickCount % 4 == 2)
+            {
+                animator.SetBool("tlToTr", true);
+            }
+            else if (clickCount % 4 == 3)
+            {
+                animator.SetBool("trToBl", true);
+            }
+            else if (clickCount % 4 == 0)
+            {
+                canClick = false;
+                animator.SetBool("blToBr", true);
+                animator.SetBool("Completed", true);
+
+                StartCoroutine(InstantiateAfterDelayCoroutine());
+                GameObject.Destroy(animator.gameObject, 1f);
+            }
+
 
             // Check if the click count reaches the threshold
             if (clickCount >= clickThreshold)
             {
-                animator.SetBool("Start", false); // "PlayAnimation" is the trigger parameter in the Animator controller
-                animator.SetBool("End", true); // "PlayAnimation" is the trigger parameter in the Animator controller
-
-                // Reset the click count
+                // Reset the click count and increase the players currency
                 clickCount = 0;
 
                 GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency++;
 
             }
-            else
-            {
-                animator.SetBool("Start", true);
-                animator.SetBool("End", false);
-            }
-
-            if (currencyCountText != null)
-            {
-                currencyCountText.text = "Currrency: " + GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency;
-            }
         }
+    }
+
+    //Instantiates a new game object for the animator after a alloted amount of time
+    IEnumerator InstantiateAfterDelayCoroutine()
+    {
+        yield return new WaitForSeconds(1.5f);
+        GameObject gameObject = GameObject.Instantiate(cardPool.startingCard);
+        animator = gameObject.GetComponent<Animator>();
+        canClick = true;
     }
 }
