@@ -2,12 +2,17 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using System.Collections;
+using FMODUnity;
 
 public class ClickCounter : MonoBehaviour
 {
     private int clickCount = 0;
     private bool canClick = true;
 
+    [SerializeField] private EventReference topLeft;
+    [SerializeField] private EventReference topRight;
+    [SerializeField] private EventReference bottomLeft;
+    [SerializeField] private EventReference bottomRight;
     [SerializeField]
     private Animator animator; // Reference to the Animator component for playing animations
     [SerializeField]
@@ -45,14 +50,17 @@ public class ClickCounter : MonoBehaviour
             if (clickCount % 4 == 1)
             {
                 animator.SetBool("emptyToTl", true);
+                AudioManager.instance.PlayOneShot(topLeft, this.transform.position);
             }
             else if (clickCount % 4 == 2)
             {
                 animator.SetBool("tlToTr", true);
+                AudioManager.instance.PlayOneShot(topRight, this.transform.position);
             }
             else if (clickCount % 4 == 3)
             {
                 animator.SetBool("trToBl", true);
+                AudioManager.instance.PlayOneShot(bottomLeft, this.transform.position);
             }
             else if (clickCount % 4 == 0)
             {
@@ -62,6 +70,7 @@ public class ClickCounter : MonoBehaviour
 
                 StartCoroutine(InstantiateAfterDelayCoroutine());
                 GameObject.Destroy(animator.gameObject, 1f);
+                AudioManager.instance.PlayOneShot(bottomRight, this.transform.position);
             }
 
 
