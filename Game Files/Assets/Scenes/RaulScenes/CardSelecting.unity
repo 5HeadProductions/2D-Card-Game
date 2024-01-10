@@ -342,7 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474295587}
   - component: {fileID: 474295586}
-  - component: {fileID: 474295585}
+  - component: {fileID: 474295588}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -350,14 +350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &474295585
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474295584}
-  m_Enabled: 1
 --- !u!20 &474295586
 Camera:
   m_ObjectHideFlags: 0
@@ -424,6 +416,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474295588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474295584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1835457587}
 --- !u!95 &973415408 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6793111685671579804, guid: 1266cfaf912b76842bf76d06fabae2a1, type: 3}
@@ -784,6 +789,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b312461969eff1479a1417217f7d2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topLeft:
+    Guid:
+      Data1: 206744928
+      Data2: 1329537931
+      Data3: 510744720
+      Data4: -79274341
+    Path: event:/TopLeft
+  topRight:
+    Guid:
+      Data1: -1354916217
+      Data2: 1284342849
+      Data3: 1308557743
+      Data4: 122502261
+    Path: event:/TopRight
+  bottomLeft:
+    Guid:
+      Data1: -156127829
+      Data2: 1328814244
+      Data3: -754028140
+      Data4: -1735973891
+    Path: event:/BottomLeft
+  bottomRight:
+    Guid:
+      Data1: -1414086347
+      Data2: 1133562237
+      Data3: 639824020
+      Data4: -1763440901
+    Path: event:/BottomRight
   animator: {fileID: 973415408}
   clickThreshold: 4
   clickCountText: {fileID: 320887797}
@@ -814,6 +847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835457588}
   - component: {fileID: 1835457589}
+  - component: {fileID: 1835457590}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -854,6 +888,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardsObjects: []
   startingCard: {fileID: 2266671524387938683, guid: 1266cfaf912b76842bf76d06fabae2a1, type: 3}
+--- !u!114 &1835457590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835457587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20139e37ab894c46bf9a782351104ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1934638790
 GameObject:
   m_ObjectHideFlags: 0
