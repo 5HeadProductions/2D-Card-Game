@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedFactory: {fileID: 4505099706421820797}
+  purchasedFactory: {fileID: 3920522310550660081, guid: 128c7e939db054e45b79c08af3f5d206, type: 3}
 --- !u!1 &4505099706421820797
 GameObject:
   m_ObjectHideFlags: 0

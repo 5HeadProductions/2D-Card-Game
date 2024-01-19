@@ -4,47 +4,58 @@ using UnityEngine;
 
 public class FactoryBoundry : MonoBehaviour
 {
-    //Check the tag on it to verify it is indeed a purchased factory
-    //Have update running and have a boolean that is updated by mouse click
-    //On trigger we check the tag and that we have clicked
-    bool clicked = false;
+    private bool _clicked = false;
+    private string _purchasedFactoryName;
 
     [SerializeField]
     [Tooltip("The factory to be activated when the plot is clicked.")]
     GameObject linkedFactory;
 
+    [SerializeField]
+    [Tooltip("The factory that has been purchased, the gameobject")]
+    GameObject purchasedFactory;
+
+
+    private void Start()
+    {
+        _purchasedFactoryName = purchasedFactory.name;
+    }
+
+    //When the purchased factory enters this(Factory plot collider) we turn the plot green to indicate the plot is available for a factory to be placed.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        //Debug.Log(collision.gameObject.name);
-        if(clicked && collision.gameObject.name == "PurchasedFactory(Clone)")
-        {
-            
-            clicked = false;
-            this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            Destroy(collision.gameObject);
-        }
-    }
-
+    //When the purchased factory exits this(Factory plot collider) we turn the plot white to indicate the plot is empty and available.
     private void OnTriggerExit2D(Collider2D collision)
     {
         this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 
+    //The function is entered while a collision is happening and we check if we have clicked the plot and it is the appropriate game object.
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log(_purchasedFactoryName);
+        if(_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
+        {        
+            _clicked = false;
+            this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            this.gameObject.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(collision.gameObject);
+        }
+    }
+
     private void Update()
     {
+        //Keeps the clicked bool depending on if the mouse is pressed.
         if (Input.GetMouseButton(0))
         {
-            //Debug.Log("Entered Input");
-            clicked = true;
+            _clicked = true;
         }
         else
         {
-            clicked = false;
+            _clicked = false;
         }
     }
 }
