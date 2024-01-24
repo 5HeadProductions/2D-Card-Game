@@ -36,7 +36,6 @@ public class FactoryBoundry : MonoBehaviour
     //The function is entered while a collision is happening and we check if we have clicked the plot and it is the appropriate game object.
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(_purchasedFactoryName);
         if(_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
         {        
             _clicked = false;
