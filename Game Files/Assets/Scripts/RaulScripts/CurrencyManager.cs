@@ -7,7 +7,7 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager instance { get; private set; }
 
     
-    private int _totalCurrency = 0;
+    private static int _totalCurrency;
     public int TotalCurrency
     {
         get { return _totalCurrency; }
@@ -17,7 +17,7 @@ public class CurrencyManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Found more than one Audio Manager in the scene");
+            Debug.LogError("Found more than one Currency Manager in the scene");
         }
         instance = this;
     }
