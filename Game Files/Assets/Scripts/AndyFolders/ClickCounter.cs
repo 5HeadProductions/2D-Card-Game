@@ -34,7 +34,6 @@ public class ClickCounter : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency);
         //Checks if the mouse click and if we allow the click to happen
         if (Input.GetMouseButtonDown(0) && canClick)
         {

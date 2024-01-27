@@ -13,6 +13,7 @@ public class MenuBucket : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.GetComponent<PurchasedFactory>().isFollowingMouse = false;
+        collision.gameObject.GetComponent<PurchasedFactory>().loadBetweenScenes = true;
         this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
 }
