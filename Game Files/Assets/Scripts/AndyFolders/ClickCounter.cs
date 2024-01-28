@@ -37,6 +37,7 @@ public class ClickCounter : MonoBehaviour
         //Checks if the mouse click and if we allow the click to happen
         if (Input.GetMouseButtonDown(0) && canClick)
         {
+            //Check if we are in the card crafting scene or else do not increment clicks or play any more logic
             if (SceneManager.GetActiveScene().name == cardCraftingSceneName)
             {
                 clickCount++;
