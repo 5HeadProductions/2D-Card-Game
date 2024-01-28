@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class is a singleton manager that keeps track of the players current currency.
+ * 
+ * This component should be attached to an empty gameobject. There should NOT be more than one in a scene.
+ */
 public class CurrencyManager : MonoBehaviour
 {
     public static CurrencyManager instance { get; private set; }

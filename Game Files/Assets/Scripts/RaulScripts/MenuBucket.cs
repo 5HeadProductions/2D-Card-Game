@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script will make the purchased factories stop following the mouse
+ * and will give the purchased factory the ability to load between scenes.
+ * 
+ * This component should be attached to the gameObject that will carry 
+ * purchased factories between scenes.
+ */
 public class MenuBucket : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -14,6 +20,5 @@ public class MenuBucket : MonoBehaviour
     {
         collision.gameObject.GetComponent<PurchasedFactory>().isFollowingMouse = false;
         collision.gameObject.GetComponent<PurchasedFactory>().loadBetweenScenes = true;
-        this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
 }

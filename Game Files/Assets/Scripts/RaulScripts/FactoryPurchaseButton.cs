@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script checks if the player has enough currency to purchase a factory.
+ * 
+ * This component should be attached to the button that will purchase the factory.
+ */
 public class FactoryPurchaseButton : MonoBehaviour
 {
     private GameObject factoryInstance;

@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script is in charge of detecting when purchased factories are near the
+ * available plots of land. This script also detects when an available plot of land 
+ * is clicked and places a factory when this event happens.
+ * 
+ * This component should be attached to the boundries of where factories can be placed.
+ */
 public class FactoryBoundry : MonoBehaviour
 {
     private bool _clicked = false;

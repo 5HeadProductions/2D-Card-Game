@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * This class loads is the functions the buttons will call provided they are given a name.
+ * (SHOULD refactor to only one function called load scene that accepts a scene name there is no reason these are seperate)
+ */
 public class SceneButtons : MonoBehaviour
 {
     [SerializeField]

@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/*
+ * This class updates the currency whenever there is a change to the total currency.
+ * 
+ * This component should be attached to a text UI gameObject that will display the currency.
+ */ 
 public class CurrencyDisplay : MonoBehaviour
 {
     private int oldTotal = 0;
 
-    // Update is called once per frame
     void Update()
     {
         if(oldTotal != CurrencyManager.instance.TotalCurrency)

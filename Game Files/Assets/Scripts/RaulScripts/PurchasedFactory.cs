@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/*
+ * This script determines whether a purchasedFactory gameObject should be following
+ * the mouse and/or should be loaded between scenes.
+ * 
+ * This script should be attached to purchasedFactory PreFab.
+ */
 public class PurchasedFactory : MonoBehaviour
 {
     public bool isFollowingMouse = true;
@@ -10,15 +16,15 @@ public class PurchasedFactory : MonoBehaviour
 
     void OnMouseDown()
     {
+        //On click can be "picked up", starts following the mouse again.
         isFollowingMouse = true; 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isFollowingMouse)
         {
-            //give the factory instance a separate script that will check to see if it should still follow the mouse.
+            //Makes the gameObject follow the mouse.
             Vector3 mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
             mousePos.z = 0;

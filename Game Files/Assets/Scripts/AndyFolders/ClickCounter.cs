@@ -1,10 +1,16 @@
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
 using System.Collections;
 using FMODUnity;
 using UnityEngine.SceneManagement;
 
+/*
+ * This class is a manager in charge of detecting if we are 
+ * in the card crafting Scene and counting the amount of clicks
+ * as well as incrementing the currency when clicks reach the clickThreshold.
+ * This Class also updates the animator parameters to assist the animations
+ * and also updates the currency text.
+ */
 public class ClickCounter : MonoBehaviour
 {
     private int clickCount = 0;
@@ -83,10 +89,7 @@ public class ClickCounter : MonoBehaviour
             {
                 clickCountText.text = "Clicks: " + clickCount;
             }
-            if (currencyCountText != null)
-            {
-                currencyCountText.text = "Currrency: " + GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency;
-            }
+            
         }
     }
 
