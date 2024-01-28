@@ -2,37 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script moves the ball back and forth above the pegboard before dropping as well as 
+ * releases the ball when the player hits space.
+ * 
+ * This script should be attached to the ball that will drop on the plinko board.
+ */
 public class BallDropBehavior : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("")]
+    [Tooltip("The leftmost x position that the ball that is going to drop should not pass.")]
     private float beginningXPosition;
 
     [SerializeField]
-    [Tooltip("")]
+    [Tooltip("The rightmost x position that the ball that is going to drop should not pass.")]
     private float endXPosition;
 
     [SerializeField]
-    [Tooltip("")]
+    [Tooltip("This is the speed at which the ball should move back and forth from beginning to end positions.")]
     private float displacementSpeed = 1;
 
-    bool left = true;
-    bool shouldDisplace = true;
+    private bool _left = true;
+    private bool _shouldDisplace = true;
     // Update is called once per frame
     void FixedUpdate()
     {
         if(this.gameObject.transform.position.x < beginningXPosition)
         {
-            left = true;
+            _left = true;
         }
         else if(this.gameObject.transform.position.x > endXPosition)
         {
-            left = false;
+            _left = false;
         }
 
-        if (shouldDisplace)
+        if (_shouldDisplace)
         {
-            if (left)
+            if (_left)
             {
                 this.gameObject.transform.Translate(Vector3.right * Time.deltaTime * displacementSpeed, Space.World);
             }
@@ -49,7 +55,7 @@ public class BallDropBehavior : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-            shouldDisplace = false;
+            _shouldDisplace = false;
         }
     }
 }
