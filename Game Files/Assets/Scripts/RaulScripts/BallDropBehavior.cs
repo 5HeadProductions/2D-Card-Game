@@ -22,23 +22,16 @@ public class BallDropBehavior : MonoBehaviour
     [Tooltip("This is the speed at which the ball should move back and forth from beginning to end positions.")]
     private float displacementSpeed = 1;
 
-    private bool _left = true;
+    private bool _movingDirection = true;
     private bool _shouldDisplace = true;
-    // Update is called once per frame
+
+
     void FixedUpdate()
     {
-        if(this.gameObject.transform.position.x < beginningXPosition)
-        {
-            _left = true;
-        }
-        else if(this.gameObject.transform.position.x > endXPosition)
-        {
-            _left = false;
-        }
-
+        //Moves the ball left or right depending on where the ball is currently located
         if (_shouldDisplace)
         {
-            if (_left)
+            if (_movingDirection)
             {
                 this.gameObject.transform.Translate(Vector3.right * Time.deltaTime * displacementSpeed, Space.World);
             }
@@ -52,6 +45,17 @@ public class BallDropBehavior : MonoBehaviour
 
     private void Update()
     {
+        //Determines if the ball has passed the beginning or end position and sends it back to the other position.
+        if (this.gameObject.transform.position.x < beginningXPosition)
+        {
+            _movingDirection = true;
+        }
+        else if (this.gameObject.transform.position.x > endXPosition)
+        {
+            _movingDirection = false;
+        }
+
+        //Releases the ball from the Y constraints in order to drop it to the buckets
         if (Input.GetKeyDown(KeyCode.Space))
         {
             this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
