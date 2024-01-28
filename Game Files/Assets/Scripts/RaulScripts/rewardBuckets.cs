@@ -12,12 +12,12 @@ public class rewardBuckets : MonoBehaviour
     {
         if (isReward)
         {
-            Debug.Log("Currency++");
+            CurrencyManager.instance.TotalCurrency++;
             SceneManager.LoadScene("FactoryPurchasing");
         }
         else
         {
-            Debug.Log("Currency--");
+            CurrencyManager.instance.TotalCurrency--;
             SceneManager.LoadScene("FactoryPurchasing");
         }
     }
