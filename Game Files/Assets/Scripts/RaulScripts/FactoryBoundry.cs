@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
  * This script is in charge of detecting when purchased factories are near the
@@ -13,6 +14,7 @@ public class FactoryBoundry : MonoBehaviour
 {
     private bool _clicked = false;
     private string _purchasedFactoryName;
+    private bool _hasPlacedFactory = false;
 
     [SerializeField]
     [Tooltip("The factory to be activated when the plot is clicked.")]
@@ -46,6 +48,7 @@ public class FactoryBoundry : MonoBehaviour
         if(_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
         {        
             _clicked = false;
+            _hasPlacedFactory = true;
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
             this.gameObject.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(collision.gameObject);
@@ -62,6 +65,11 @@ public class FactoryBoundry : MonoBehaviour
         else
         {
             _clicked = false;
+        }
+
+        if (_hasPlacedFactory && _clicked)
+        {
+            SceneManager.LoadScene("Plinko");
         }
     }
 }

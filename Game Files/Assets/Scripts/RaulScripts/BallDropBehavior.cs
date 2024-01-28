@@ -12,7 +12,12 @@ public class BallDropBehavior : MonoBehaviour
     [Tooltip("")]
     private float endXPosition;
 
+    [SerializeField]
+    [Tooltip("")]
+    private float displacementSpeed = 1;
+
     bool left = true;
+    bool shouldDisplace = true;
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -25,13 +30,26 @@ public class BallDropBehavior : MonoBehaviour
             left = false;
         }
 
-        if (left)
+        if (shouldDisplace)
         {
-            this.gameObject.transform.Translate(Vector3.right * Time.deltaTime, Space.World);
+            if (left)
+            {
+                this.gameObject.transform.Translate(Vector3.right * Time.deltaTime * displacementSpeed, Space.World);
+            }
+            else
+            {
+                this.gameObject.transform.Translate(-Vector3.right * Time.deltaTime * displacementSpeed, Space.World);
+            }
         }
-        else
+        
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.gameObject.transform.Translate(-Vector3.right * Time.deltaTime, Space.World);
+            this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            shouldDisplace = false;
         }
     }
 }
