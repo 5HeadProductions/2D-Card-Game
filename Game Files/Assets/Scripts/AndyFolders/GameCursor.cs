@@ -9,8 +9,4 @@ public class GameCursor : MonoBehaviour
     {
         Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
     }
-
-    void Update()
-    {
-    }
 }

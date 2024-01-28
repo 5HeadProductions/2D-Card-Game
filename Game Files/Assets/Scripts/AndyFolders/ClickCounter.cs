@@ -1,9 +1,16 @@
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
 using System.Collections;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
+/*
+ * This class is a manager in charge of detecting if we are 
+ * in the card crafting Scene and counting the amount of clicks
+ * as well as incrementing the currency when clicks reach the clickThreshold.
+ * This Class also updates the animator parameters to assist the animations
+ * and also updates the currency text.
+ */
 public class ClickCounter : MonoBehaviour
 {
     private int clickCount = 0;
@@ -27,62 +34,62 @@ public class ClickCounter : MonoBehaviour
     [SerializeField]
     [Tooltip("Component that contains the cards coming up")]
     public CardPool cardPool;
+    [SerializeField]
+    [Tooltip("The name of the scene the card crafting is happening, this variable is used to determine whether we count or ignore the clicks")]
+    private string cardCraftingSceneName; 
 
     private void Update()
     {
         //Checks if the mouse click and if we allow the click to happen
         if (Input.GetMouseButtonDown(0) && canClick)
         {
-            clickCount++;
-            CounterManager.Instance.TotalCounter++;
+            //Check if we are in the card crafting scene or else do not increment clicks or play any more logic
+            if (SceneManager.GetActiveScene().name == cardCraftingSceneName)
+            {
+                clickCount++;
 
+                //Sets the card animation into play depending on which click it is
+                if (clickCount % 4 == 1)
+                {
+                    animator.SetBool("emptyToTl", true);
+                    AudioManager.instance.PlayOneShot(topLeft, this.transform.position);
+                }
+                else if (clickCount % 4 == 2)
+                {
+                    animator.SetBool("tlToTr", true);
+                    AudioManager.instance.PlayOneShot(topRight, this.transform.position);
+                }
+                else if (clickCount % 4 == 3)
+                {
+                    animator.SetBool("trToBl", true);
+                    AudioManager.instance.PlayOneShot(bottomLeft, this.transform.position);
+                }
+                else if (clickCount % 4 == 0)
+                {
+                    canClick = false;
+                    animator.SetBool("blToBr", true);
+                    animator.SetBool("Completed", true);
+
+                    StartCoroutine(InstantiateAfterDelayCoroutine());
+                    GameObject.Destroy(animator.gameObject, 1f);
+                    AudioManager.instance.PlayOneShot(bottomRight, this.transform.position);
+                    GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency++;
+                }
+
+
+                // Check if the click count reaches the threshold
+                if (clickCount >= clickThreshold)
+                {
+                    // Reset the click count and increase the players currency
+                    clickCount = 0;
+                }
+            }
             // Update the Text components with the total counts
             if (clickCountText != null)
             {
-                clickCountText.text = "Clicks: " + CounterManager.Instance.TotalCounter;
+                clickCountText.text = "Clicks: " + clickCount;
             }
-            if (currencyCountText != null)
-            {
-                currencyCountText.text = "Currrency: " + GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency;
-            }
-
-            //Sets the card animation into play depending on which click it is
-            if (clickCount % 4 == 1)
-            {
-                animator.SetBool("emptyToTl", true);
-                AudioManager.instance.PlayOneShot(topLeft, this.transform.position);
-            }
-            else if (clickCount % 4 == 2)
-            {
-                animator.SetBool("tlToTr", true);
-                AudioManager.instance.PlayOneShot(topRight, this.transform.position);
-            }
-            else if (clickCount % 4 == 3)
-            {
-                animator.SetBool("trToBl", true);
-                AudioManager.instance.PlayOneShot(bottomLeft, this.transform.position);
-            }
-            else if (clickCount % 4 == 0)
-            {
-                canClick = false;
-                animator.SetBool("blToBr", true);
-                animator.SetBool("Completed", true);
-
-                StartCoroutine(InstantiateAfterDelayCoroutine());
-                GameObject.Destroy(animator.gameObject, 1f);
-                AudioManager.instance.PlayOneShot(bottomRight, this.transform.position);
-            }
-
-
-            // Check if the click count reaches the threshold
-            if (clickCount >= clickThreshold)
-            {
-                // Reset the click count and increase the players currency
-                clickCount = 0;
-
-                GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency++;
-
-            }
+            
         }
     }
 
