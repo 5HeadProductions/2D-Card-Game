@@ -15,6 +15,7 @@ public class rewardBuckets : MonoBehaviour
     [SerializeField]
     [Tooltip("Buckets that will give a benefit should have this checked")]
     private bool _isReward;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (_isReward)
