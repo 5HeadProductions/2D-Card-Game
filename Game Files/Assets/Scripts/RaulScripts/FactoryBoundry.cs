@@ -73,6 +73,7 @@ public class FactoryBoundry : MonoBehaviour
         }
     }
 
+    //Coroutine enforces a half second delay to avoid the bug of creating a new factory and getting taken to the Plinko scene immediately.
     IEnumerator AllowFactoryToBePlacedAfterDelayCoroutine()
     {
         yield return new WaitForSeconds(.5f);
