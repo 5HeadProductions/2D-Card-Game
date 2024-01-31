@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 2d39321427c10d34c919e7622bd3da4f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2a52fd0d035c54bbab8d268a268ad5
+      internalID: -1331528666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20b42da43784a64ebec69883048665b
+      internalID: 591133678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4ccdf25c7167c4cadc2dd89bc64aa4
+      internalID: 1956285219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9ecc5782934d348b2332a6ba6757d9
+      internalID: 1567577278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ecf58f139c89b4593d9736f20b12c5
+      internalID: 1033699509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 816.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b53246584b1d884f9cfd9a58c7dae66
+      internalID: 1770904596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf9338c5076dd54a8c2760f2d2747b4
+      internalID: 734021871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a25a10dcf6e1841a5391271c8ea0dd
+      internalID: -1659245833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_8
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98049939ef1cde4cb60fac41f5644a1
+      internalID: -350312042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_9
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6a4fbca007ca34e87792d5e72c9ed8
+      internalID: 608614216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b99c1d166f90747a2c17807fadf18f
+      internalID: 1833431275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_11
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 653.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1671d254a06b5449fffa536d97d997
+      internalID: -8451604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13abe63f3da97c449b35cd900538762b
+      internalID: -1767584525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_13
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1993234e073f778438d25fe426616837
+      internalID: 629465632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebffff224ba43d4eb184fcd0e6d83bf
+      internalID: 74705497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_15
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44ab20074abdef4ab7767cc09def7fd
+      internalID: -624907924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_16
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04ef019872e00446b0a562429629c69
+      internalID: -422749870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_17
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 490.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1e082ce227a043a61983261234221
+      internalID: -1041542673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70291cfa2e7417646b9a24646cf3a42c
+      internalID: -682267919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_19
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fbef30d1f914e44a187aa69478cc71
+      internalID: -1092485558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_20
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146699e7b9256eb4d901eb74dcabe368
+      internalID: -647281238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_21
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196ab99ecc2252d41b202e21f9e0178a
+      internalID: -629473437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_22
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47b26b58424f5f449312dd42510b062
+      internalID: 1192389848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_23
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 327.6667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809e2136b750e64a9dee63ed26d71fa
+      internalID: -1076904360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f0a5dd8458b554fbca08c2586ae76f
+      internalID: 1708325731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_25
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702f02f4ce6fcd04696511f34ecf3b12
+      internalID: 54732637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_26
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c5559a9e1835d41a8199824d522237
+      internalID: -179579068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_27
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cc1c62922454e4b9af6014076501e9
+      internalID: -1661561078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_28
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41341ddad88ed914ba4bfa2b4f01e209
+      internalID: -372306254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_29
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 164.66667
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff645d200ad2814182f65a6e99d886d
+      internalID: 1877907621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abb7073f01d56e4da8df639bdf9eb54
+      internalID: -1850937647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb71516272a7f6b4bb8220fe82610302
+      internalID: 1758571983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac59826ecc727954f8fd09422010f79b
+      internalID: -289402393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_33
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7f2af5b34f3a7479d12b54a7b78aa8
+      internalID: -115823829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_34
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722d0c5ceba6b6f4fa04b92da074bb14
+      internalID: 221787996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_35
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1.6666718
+        width: 190.5
+        height: 163.33333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f530b4eda7da9141bd53f71a94632cd
+      internalID: -1178560413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_0: -1331528666
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_1: 591133678
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_10: 1833431275
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_11: -8451604
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_12: -1767584525
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_13: 629465632
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_14: 74705497
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_15: -624907924
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_16: -422749870
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_17: -1041542673
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_18: -682267919
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_19: -1092485558
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_2: 1956285219
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_20: -647281238
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_21: -629473437
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_22: 1192389848
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_23: -1076904360
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_24: 1708325731
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_25: 54732637
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_26: -179579068
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_27: -1661561078
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_28: -372306254
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_29: 1877907621
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_3: 1567577278
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_30: -1850937647
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_31: 1758571983
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_32: -289402393
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_33: -115823829
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_34: 221787996
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_35: -1178560413
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_4: 1033699509
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_5: 1770904596
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_6: 734021871
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_7: -1659245833
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_8: -350312042
+      set-design-of-a-sword-with-various-textures-gold-diamond-silver-bronze-etc-vector_9: 608614216
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

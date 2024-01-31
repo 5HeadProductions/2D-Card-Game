@@ -48,7 +48,7 @@ public class FactoryBoundry : MonoBehaviour
         if(_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
         {        
             _clicked = false;
-            _hasPlacedFactory = true;
+            StartCoroutine(AllowFactoryToBePlacedAfterDelayCoroutine());
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
             this.gameObject.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(collision.gameObject);
@@ -71,5 +71,11 @@ public class FactoryBoundry : MonoBehaviour
         {
             SceneManager.LoadScene("Plinko");
         }
+    }
+
+    IEnumerator AllowFactoryToBePlacedAfterDelayCoroutine()
+    {
+        yield return new WaitForSeconds(.5f);
+        _hasPlacedFactory = true;
     }
 }
