@@ -527,6 +527,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 973415408}
     - target: {fileID: 920018131011835601, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: cardInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: bcd1367419c7f9a4fa2d952c5c10cf08, type: 2}
+    - target: {fileID: 920018131011835601, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: clickCountText
       value: 
       objectReference: {fileID: 320887797}
