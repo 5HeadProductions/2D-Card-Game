@@ -482,6 +482,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 199713652948374547, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeCard
+      value: 
+      objectReference: {fileID: 2266671524387938683, guid: 1266cfaf912b76842bf76d06fabae2a1, type: 3}
+    - target: {fileID: 199713652948374547, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: silverCard
+      value: 
+      objectReference: {fileID: 2266671524387938683, guid: 62a085acb6d232b4eb8ac8f53a0b8064, type: 3}
     - target: {fileID: 652319171913410030, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

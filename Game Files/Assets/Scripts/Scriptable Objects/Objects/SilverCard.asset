@@ -12,28 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b20dd5dbecf4ae479f2aee07c8061a5, type: 3}
   m_Name: SilverCard
   m_EditorClassIdentifier: 
-  topLeftSound:
+  topLeft:
     Guid:
       Data1: 206744928
       Data2: 1329537931
       Data3: 510744720
       Data4: -79274341
     Path: event:/TopLeft
-  topRightSound:
+  topRight:
     Guid:
       Data1: -1354916217
       Data2: 1284342849
       Data3: 1308557743
       Data4: 122502261
     Path: event:/TopRight
-  bottomLeftSound:
+  bottomLeft:
     Guid:
       Data1: -156127829
       Data2: 1328814244
       Data3: -754028140
       Data4: -1735973891
     Path: event:/BottomLeft
-  bottomRightSound:
+  bottomRight:
     Guid:
       Data1: -1414086347
       Data2: 1133562237
