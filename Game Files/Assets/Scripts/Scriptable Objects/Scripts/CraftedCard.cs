@@ -7,10 +7,10 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CraftedCard : ScriptableObject
 {
-    public EventReference topLeftSound;
-    public EventReference topRightSound;
-    public EventReference bottomLeftSound;
-    public EventReference bottomRightSound;
+    public EventReference topLeft;
+    public EventReference topRight;
+    public EventReference bottomLeft;
+    public EventReference bottomRight;
 
     public int currencyIncrease;
 }

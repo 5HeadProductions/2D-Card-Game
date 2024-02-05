@@ -1146,6 +1146,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 199713652948374547, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeCard
+      value: 
+      objectReference: {fileID: 2266671524387938683, guid: 1266cfaf912b76842bf76d06fabae2a1, type: 3}
+    - target: {fileID: 199713652948374547, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: silverCard
+      value: 
+      objectReference: {fileID: 2266671524387938683, guid: 62a085acb6d232b4eb8ac8f53a0b8064, type: 3}
     - target: {fileID: 652319171913410030, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1189,6 +1197,90 @@ PrefabInstance:
     - target: {fileID: 920018131011835601, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: cardCraftingSceneName
       value: CardCrafting
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopLeft.Path
+      value: event:/TopLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopRight.Path
+      value: event:/TopRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomLeft.Path
+      value: event:/BottomLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomRight.Path
+      value: event:/BottomRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopLeft.Guid.Data1
+      value: 206744928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopLeft.Guid.Data2
+      value: 1329537931
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopLeft.Guid.Data3
+      value: 510744720
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopLeft.Guid.Data4
+      value: -79274341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopRight.Guid.Data1
+      value: -1354916217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopRight.Guid.Data2
+      value: 1284342849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopRight.Guid.Data3
+      value: 1308557743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeTopRight.Guid.Data4
+      value: 122502261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomLeft.Guid.Data1
+      value: -156127829
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomLeft.Guid.Data2
+      value: 1328814244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomLeft.Guid.Data3
+      value: -754028140
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomLeft.Guid.Data4
+      value: -1735973891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: CardCraftingScene.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomRight.Guid.Data1
+      value: -1414086347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomRight.Guid.Data2
+      value: 1133562237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomRight.Guid.Data3
+      value: 639824020
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: bronzeBottomRight.Guid.Data4
+      value: -1763440901
       objectReference: {fileID: 0}
     - target: {fileID: 8483577348977787272, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: m_Name

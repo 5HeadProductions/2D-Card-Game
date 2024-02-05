@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8203114121628287842}
   - component: {fileID: 6793111685671579804}
-  - component: {fileID: 8906105449286821306}
+  - component: {fileID: 6977149565831539032}
   m_Layer: 0
-  m_Name: Pieced Animation
+  m_Name: BronzeCraftedCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8906105449286821306
+--- !u!114 &6977149565831539032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8086b6c8e5387418e6e2043aa32c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  cardInfo: {fileID: 11400000, guid: bcd1367419c7f9a4fa2d952c5c10cf08, type: 2}
 --- !u!1 &3518051503826017596
 GameObject:
   m_ObjectHideFlags: 0

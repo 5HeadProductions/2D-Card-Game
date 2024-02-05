@@ -20,7 +20,8 @@ public class ClickCounter : MonoBehaviour
     CraftedCard cardInfo;
 
     [SerializeField]
-    private Animator animator; // Reference to the Animator component for playing animations
+    [Tooltip("Reference to the animator of the card pieces coming together.")]
+    private Animator animator;
     [SerializeField]
     [Tooltip("Number of clicks required to gain money from the card completing.")]
     public int clickThreshold = 4;
@@ -30,9 +31,6 @@ public class ClickCounter : MonoBehaviour
     [SerializeField]
     [Tooltip("Component displaying the currency")]
     public TextMeshProUGUI currencyCountText;
-    [SerializeField]
-    [Tooltip("Component that contains the cards coming up")]
-    public CardPool cardPool;
     [SerializeField]
     [Tooltip("The name of the scene the card crafting is happening, this variable is used to determine whether we count or ignore the clicks")]
     private string cardCraftingSceneName; 
@@ -51,17 +49,17 @@ public class ClickCounter : MonoBehaviour
                 if (clickCount % 4 == 1)
                 {
                     animator.SetBool("emptyToTl", true);
-                    AudioManager.instance.PlayOneShot(cardInfo.topLeftSound, this.transform.position);
+                    AudioManager.instance.PlayOneShot(cardInfo.topLeft, this.transform.position);
                 }
                 else if (clickCount % 4 == 2)
                 {
                     animator.SetBool("tlToTr", true);
-                    AudioManager.instance.PlayOneShot(cardInfo.topRightSound, this.transform.position);
+                    AudioManager.instance.PlayOneShot(cardInfo.topRight, this.transform.position);
                 }
                 else if (clickCount % 4 == 3)
                 {
                     animator.SetBool("trToBl", true);
-                    AudioManager.instance.PlayOneShot(cardInfo.bottomLeftSound, this.transform.position);
+                    AudioManager.instance.PlayOneShot(cardInfo.bottomLeft, this.transform.position);
                 }
                 else if (clickCount % 4 == 0)
                 {
@@ -71,7 +69,7 @@ public class ClickCounter : MonoBehaviour
 
                     StartCoroutine(InstantiateAfterDelayCoroutine());
                     GameObject.Destroy(animator.gameObject, 1f);
-                    AudioManager.instance.PlayOneShot(cardInfo.bottomRightSound, this.transform.position);
+                    AudioManager.instance.PlayOneShot(cardInfo.bottomRight, this.transform.position);
                     GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency += cardInfo.currencyIncrease;
                 }
 
@@ -96,8 +94,9 @@ public class ClickCounter : MonoBehaviour
     IEnumerator InstantiateAfterDelayCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        GameObject gameObject = GameObject.Instantiate(cardPool.startingCard);
-        animator = gameObject.GetComponent<Animator>();
+        GameObject craftedCard = GameObject.Instantiate(CardPool.instance.DrawCard());
+        animator = craftedCard.GetComponent<Animator>();
+        cardInfo = CardPool.instance.GetCardInfo(craftedCard);
         canClick = true;
     }
 }
