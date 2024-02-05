@@ -94,7 +94,7 @@ public class ClickCounter : MonoBehaviour
     IEnumerator InstantiateAfterDelayCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        GameObject craftedCard = GameObject.Instantiate(CardPool.instance.drawCard());
+        GameObject craftedCard = GameObject.Instantiate(CardPool.instance.DrawCard());
         animator = craftedCard.GetComponent<Animator>();
         cardInfo = CardPool.instance.GetCardInfo(craftedCard);
         canClick = true;

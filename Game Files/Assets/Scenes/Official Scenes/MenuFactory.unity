@@ -378,9 +378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a2ddf4ff02b314c867b621602a36a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardToBePurchased: {fileID: 2266671524387938683, guid: 62a085acb6d232b4eb8ac8f53a0b8064, type: 3}
-  drawChance: 10
-  cardCost: 3
+  _cardToBePurchased: {fileID: 2266671524387938683, guid: 62a085acb6d232b4eb8ac8f53a0b8064, type: 3}
+  _drawChance: 10
+  _cardCost: 3
 --- !u!1 &521057326
 GameObject:
   m_ObjectHideFlags: 0
