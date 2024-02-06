@@ -71,6 +71,7 @@ public class ClickCounter : MonoBehaviour
                     GameObject.Destroy(animator.gameObject, 1f);
                     AudioManager.instance.PlayOneShot(cardInfo.bottomRight, this.transform.position);
                     GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency += cardInfo.currencyIncrease;
+                    AudioManager.instance.PlayOneShot(AudioManager.instance.currencyGainSFX, this.transform.position);
                 }
 
 
