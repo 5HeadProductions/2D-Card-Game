@@ -43,6 +43,7 @@ public class ClickCounter : MonoBehaviour
     }
     private void Update()
     {
+        //Looks for the current crafted card and assigns the animator and cardInfo
         if (SceneManager.GetActiveScene().name == cardCraftingSceneName && canClick)
         {
             animator = GameObject.FindGameObjectWithTag("CraftedCard").GetComponent<Animator>();

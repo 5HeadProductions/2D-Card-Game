@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * This component ensures the specified gameobject lives throughout all scenes
+ * and also ensures that any other gameobject with this component attached is destroyed.
+ * This component also deactivates the gameobject if it is active in the incorrect scene.
+ * 
+ * This component should be attached to the manager of the scene.
+ */
 public class BoundsManager : MonoBehaviour
 {
     public static BoundsManager instance { get; private set; }
