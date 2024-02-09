@@ -24,11 +24,15 @@ public class CardPool : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
-            Debug.LogError("Found more than one CardPool in the scene");
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-        instance = this;
+        else
+        {
+            Destroy(this.gameObject);
+        }
 
         //Initiate the card pool if it has not been initiated yet.
         if (!cardsObjects.Contains(bronzeCard))

@@ -1198,6 +1198,14 @@ PrefabInstance:
       propertyPath: cardCraftingSceneName
       value: CardCrafting
       objectReference: {fileID: 0}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: factoryParent
+      value: 
+      objectReference: {fileID: 2112765091}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: sceneObjectIsActiveIn
+      value: FactoryPurchasing
+      objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopLeft.Path
       value: event:/TopLeft

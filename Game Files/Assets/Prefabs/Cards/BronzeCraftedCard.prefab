@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6977149565831539032}
   m_Layer: 0
   m_Name: BronzeCraftedCard
-  m_TagString: Untagged
+  m_TagString: CraftedCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

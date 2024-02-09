@@ -44,128 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b312461969eff1479a1417217f7d2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topLeft:
-    Guid:
-      Data1: 206744928
-      Data2: 1329537931
-      Data3: 510744720
-      Data4: -79274341
-    Path: event:/TopLeft
-  topRight:
-    Guid:
-      Data1: -1354916217
-      Data2: 1284342849
-      Data3: 1308557743
-      Data4: 122502261
-    Path: event:/TopRight
-  bottomLeft:
-    Guid:
-      Data1: -156127829
-      Data2: 1328814244
-      Data3: -754028140
-      Data4: -1735973891
-    Path: event:/BottomLeft
-  bottomRight:
-    Guid:
-      Data1: -1414086347
-      Data2: 1133562237
-      Data3: 639824020
-      Data4: -1763440901
-    Path: event:/BottomRight
+  cardInfo: {fileID: 0}
   animator: {fileID: 0}
   clickThreshold: 4
   clickCountText: {fileID: 0}
   currencyCountText: {fileID: 0}
-  cardPool: {fileID: 199713652948374547}
---- !u!1 &2687517318060193386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2833125374702181282}
-  - component: {fileID: 8188597328246982362}
-  m_Layer: 0
-  m_Name: GameCursor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2833125374702181282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2687517318060193386}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.780884, y: 65.65396, z: -1.4666656}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 652319171913410030}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8188597328246982362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2687517318060193386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f9115aa32419e43b16d7ad254e7800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 469c3b9b8d0e7be4ebb20f47978dc6da, type: 3}
---- !u!1 &2807146303799463025
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3642667299240386793}
-  - component: {fileID: 7437644076025523826}
-  m_Layer: 0
-  m_Name: CurrencyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3642667299240386793
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2807146303799463025}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 652319171913410030}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7437644076025523826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2807146303799463025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aab9f6c9b1f46714388bb9a5c953b84f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  cardCraftingSceneName: 
 --- !u!1 &8483577348977787272
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +61,9 @@ GameObject:
   - component: {fileID: 652319171913410030}
   - component: {fileID: 199713652948374547}
   - component: {fileID: 4118177364820331169}
+  - component: {fileID: 1001541363890864207}
+  - component: {fileID: 6825749545822544138}
+  - component: {fileID: 1057939533777431548}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -197,8 +84,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3642667299240386793}
-  - {fileID: 2833125374702181282}
   - {fileID: 7094027502794502127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -214,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df866e5cd1f3e1745810ffb033b12b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardsObjects: []
-  startingCard: {fileID: 2266671524387938683, guid: 1266cfaf912b76842bf76d06fabae2a1, type: 3}
+  bronzeCard: {fileID: 0}
+  silverCard: {fileID: 0}
 --- !u!114 &4118177364820331169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +113,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c20139e37ab894c46bf9a782351104ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currencyGainSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!114 &1001541363890864207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483577348977787272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab9f6c9b1f46714388bb9a5c953b84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6825749545822544138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483577348977787272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f9115aa32419e43b16d7ad254e7800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 469c3b9b8d0e7be4ebb20f47978dc6da, type: 3}
+--- !u!114 &1057939533777431548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483577348977787272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc60afddf94eb0468e88deffa089cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneObjectIsActiveIn: FactoryPurchase
