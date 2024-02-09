@@ -33,10 +33,22 @@ public class ClickCounter : MonoBehaviour
     public TextMeshProUGUI currencyCountText;
     [SerializeField]
     [Tooltip("The name of the scene the card crafting is happening, this variable is used to determine whether we count or ignore the clicks")]
-    private string cardCraftingSceneName; 
+    private string cardCraftingSceneName;
 
+
+    private void Awake()
+    {
+        clickCountText = GameObject.Find("Total_Text_Currency").GetComponent<TextMeshProUGUI>();
+        
+    }
     private void Update()
     {
+        //Looks for the current crafted card and assigns the animator and cardInfo
+        if (SceneManager.GetActiveScene().name == cardCraftingSceneName && canClick)
+        {
+            animator = GameObject.FindGameObjectWithTag("CraftedCard").GetComponent<Animator>();
+            cardInfo = GameObject.FindGameObjectWithTag("CraftedCard").GetComponent<CardInfo>().cardInfo;
+        }
         //Checks if the mouse click and if we allow the click to happen
         if (Input.GetMouseButtonDown(0) && canClick)
         {
@@ -70,7 +82,8 @@ public class ClickCounter : MonoBehaviour
                     StartCoroutine(InstantiateAfterDelayCoroutine());
                     GameObject.Destroy(animator.gameObject, 1f);
                     AudioManager.instance.PlayOneShot(cardInfo.bottomRight, this.transform.position);
-                    GameObject.Find("CurrencyManager").GetComponent<CurrencyManager>().TotalCurrency += cardInfo.currencyIncrease;
+                    CurrencyManager.instance.TotalCurrency += cardInfo.currencyIncrease;
+                    AudioManager.instance.PlayOneShot(AudioManager.instance.currencyGainSFX, this.transform.position);
                 }
 
 
@@ -81,12 +94,6 @@ public class ClickCounter : MonoBehaviour
                     clickCount = 0;
                 }
             }
-            // Update the Text components with the total counts
-            if (clickCountText != null)
-            {
-                clickCountText.text = "Clicks: " + clickCount;
-            }
-            
         }
     }
 

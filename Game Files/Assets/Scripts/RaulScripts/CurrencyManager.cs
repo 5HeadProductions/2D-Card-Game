@@ -20,11 +20,15 @@ public class CurrencyManager : MonoBehaviour
     }
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
-            Debug.LogError("Found more than one Currency Manager in the scene");
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-        instance = this;
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 }
