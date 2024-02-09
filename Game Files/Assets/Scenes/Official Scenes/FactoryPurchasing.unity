@@ -1198,6 +1198,14 @@ PrefabInstance:
       propertyPath: cardCraftingSceneName
       value: CardCrafting
       objectReference: {fileID: 0}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: factoryParent
+      value: 
+      objectReference: {fileID: 2112765091}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: sceneObjectIsActiveIn
+      value: FactoryPurchasing
+      objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopLeft.Path
       value: event:/TopLeft
@@ -1205,6 +1213,10 @@ PrefabInstance:
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopRight.Path
       value: event:/TopRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: currencyGainSFX.Path
+      value: event:/CurrencyGain
       objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeBottomLeft.Path
@@ -1245,6 +1257,22 @@ PrefabInstance:
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopRight.Guid.Data4
       value: 122502261
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: currencyGainSFX.Guid.Data1
+      value: 781886485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: currencyGainSFX.Guid.Data2
+      value: 1169901009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: currencyGainSFX.Guid.Data3
+      value: -1275533643
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: currencyGainSFX.Guid.Data4
+      value: 666727434
       objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeBottomLeft.Guid.Data1
