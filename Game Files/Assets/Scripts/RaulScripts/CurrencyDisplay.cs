@@ -16,7 +16,7 @@ public class CurrencyDisplay : MonoBehaviour
     {
         if(oldTotal != CurrencyManager.instance.TotalCurrency)
         {
-            this.gameObject.GetComponent<TextMeshProUGUI>().text = "Currrency: " + CurrencyManager.instance.TotalCurrency;
+            this.gameObject.GetComponent<TextMeshProUGUI>().text = "Currency: " + CurrencyManager.instance.TotalCurrency;
             oldTotal = CurrencyManager.instance.TotalCurrency;
         }
     }

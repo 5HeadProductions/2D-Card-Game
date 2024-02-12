@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,33 +20,44 @@ public class BoundsManager : MonoBehaviour
 
     [SerializeField]
     [Tooltip("Reference to the parent of all the factory boundaries.")]
-    GameObject factoryParent;
+    List<Unbreakable> factoryParent;
+
+    private List<GameObject> factoryParentInstance = new List<GameObject>();
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(factoryParent);
+            foreach (var factory in factoryParent)
+            {
+                var gameObject = GameObject.Instantiate(factory.objectToBeCarriedBetweenAllScenes, factory.positionOfObject, Quaternion.identity);
+                factoryParentInstance.Add(gameObject);
+                DontDestroyOnLoad(gameObject);
+            }
             DontDestroyOnLoad(this.gameObject);
         }
         else
         {
             Destroy(this.gameObject);
-            Destroy(factoryParent);
         }
     }
     //Its gonna need to be turned on by another game object
     void Update()
     {
-
-        if(sceneObjectIsActiveIn == SceneManager.GetActiveScene().name)
+        for(var i = 0; i < factoryParentInstance.Count; i++)
         {
-            factoryParent.gameObject.SetActive(true);
-        }
-        else
-        {
-            factoryParent.gameObject.SetActive(false);
+            if (factoryParentInstance[i] != null && factoryParent[i].sceneObjectIsActiveIn == SceneManager.GetActiveScene().name)
+            {
+                factoryParentInstance[i].SetActive(true);
+            }
+            else
+            {
+                if (factoryParentInstance[i] != null)
+                {
+                    factoryParentInstance[i].SetActive(false);
+                }
+            }
         }
     }
 }

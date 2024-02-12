@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class FactoryBoundry : MonoBehaviour
     private bool _clicked = false;
     private string _purchasedFactoryName;
     private bool _hasPlacedFactory = false;
+    private bool _clickedOnFactory = false;
 
     [SerializeField]
     [Tooltip("The factory to be activated when the plot is clicked.")]
@@ -53,6 +55,7 @@ public class FactoryBoundry : MonoBehaviour
             this.gameObject.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(collision.gameObject);
         }
+        _clickedOnFactory = true;
     }
 
     private void Update()
@@ -67,7 +70,31 @@ public class FactoryBoundry : MonoBehaviour
             _clicked = false;
         }
 
-        if (_hasPlacedFactory && _clicked)
+        if (Input.GetMouseButtonDown(0))
+        {
+            var clickTime = DateTime.Now;
+            var mousePosition = Input.mousePosition;
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+            if (hit != null && hit.collider != null)
+            {
+                if(hit.collider.gameObject == this.gameObject)
+                {
+                    _clickedOnFactory = true;
+                }
+
+
+            }
+            else
+            {
+                _clickedOnFactory = false;
+            }
+
+        }
+
+        if (_hasPlacedFactory && _clicked && _clickedOnFactory)
         {
             SceneManager.LoadScene("Plinko");
         }
