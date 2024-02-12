@@ -11,11 +11,6 @@ using UnityEngine;
  */
 public class MenuBucket : MonoBehaviour
 {
-    void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.GetComponent<PurchasedFactory>().isFollowingMouse = false;
