@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c6dc6a185a2ba94584e6911f6440937, type: 3}
-  m_Name: MenuBucket
+  m_Name: BackToMainMenu
   m_EditorClassIdentifier: 
-  objectToBeCarriedBetweenAllScenes: {fileID: 3469868373543741449, guid: 11d832832268f3a42b9d0503a86fb903, type: 3}
-  sceneObjectIsActiveIn: MenuFactory
-  positionOfObject: {x: -6.86, y: -4.54, z: 0}
-  nameOfParent: 
-  secondarySceneObjectIsActiveIn: 
+  objectToBeCarriedBetweenAllScenes: {fileID: 2167101132628496637, guid: 261d99ac031bf204a90d56b130e8c39d, type: 3}
+  sceneObjectIsActiveIn: CardCrafting
+  positionOfObject: {x: 0, y: 0, z: 0}
+  nameOfParent: MainCanvas
+  secondarySceneObjectIsActiveIn: MenuFactory

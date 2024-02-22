@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Official Scenes/Plinko.unity
     guid: c697965b66c3b794889e477658000222
+  - enabled: 1
+    path: Assets/Scenes/Official Scenes/EndScene.unity
+    guid: 60dbf9936f6f5144ca79f9dfe2f67c64
   m_configObjects: {}

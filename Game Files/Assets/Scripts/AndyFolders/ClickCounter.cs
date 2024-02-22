@@ -43,9 +43,15 @@ public class ClickCounter : MonoBehaviour
     }
     private void Update()
     {
+        if(SceneManager.GetActiveScene().name != cardCraftingSceneName)
+        {
+            clickCount = 0;
+            canClick = true;
+        }
         //Looks for the current crafted card and assigns the animator and cardInfo
         if (SceneManager.GetActiveScene().name == cardCraftingSceneName && canClick)
         {
+            Debug.Log("We are finding the crafte card");
             animator = GameObject.FindGameObjectWithTag("CraftedCard").GetComponent<Animator>();
             cardInfo = GameObject.FindGameObjectWithTag("CraftedCard").GetComponent<CardInfo>().cardInfo;
         }
@@ -101,9 +107,13 @@ public class ClickCounter : MonoBehaviour
     IEnumerator InstantiateAfterDelayCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
-        GameObject craftedCard = GameObject.Instantiate(CardPool.instance.DrawCard());
-        animator = craftedCard.GetComponent<Animator>();
-        cardInfo = CardPool.instance.GetCardInfo(craftedCard);
-        canClick = true;
+        if(SceneManager.GetActiveScene().name == "CardCrafting")
+        {
+            GameObject craftedCard = GameObject.Instantiate(CardPool.instance.DrawCard());
+            animator = craftedCard.GetComponent<Animator>();
+            cardInfo = CardPool.instance.GetCardInfo(craftedCard);
+            canClick = true;
+        }
+        
     }
 }

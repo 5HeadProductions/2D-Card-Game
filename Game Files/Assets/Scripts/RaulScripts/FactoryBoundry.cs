@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,7 +16,7 @@ public class FactoryBoundry : MonoBehaviour
 {
     private bool _clicked = false;
     private string _purchasedFactoryName;
-    private bool _hasPlacedFactory = false;
+    public bool hasPlacedFactory = false;
     private bool _clickedOnFactory = false;
 
     [SerializeField]
@@ -26,10 +27,20 @@ public class FactoryBoundry : MonoBehaviour
     [Tooltip("The factory that has been purchased, the gameobject")]
     GameObject purchasedFactory;
 
+    public int increaseRate;
+    public int timeBetweenGain;
+    public bool startCoroutine;
+    public float timeBeforeAllowPlinko;
+    public bool subtractTime;
+    public bool canEnterPlinko = false;
+    public TextMeshProUGUI plinkoTimerDisplay;
+
 
     private void Start()
     {
         _purchasedFactoryName = purchasedFactory.name;
+
+        StartCoroutine(IncreaseVariableCoroutine());
     }
 
     //When the purchased factory enters this(Factory plot collider) we turn the plot green to indicate the plot is available for a factory to be placed.
@@ -47,15 +58,15 @@ public class FactoryBoundry : MonoBehaviour
     //The function is entered while a collision is happening and we check if we have clicked the plot and it is the appropriate game object.
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
-        {        
+        if (_clicked && collision.gameObject.name == _purchasedFactoryName + "(Clone)")
+        {
             _clicked = false;
             StartCoroutine(AllowFactoryToBePlacedAfterDelayCoroutine());
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
             this.gameObject.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Destroy(collision.gameObject);
+            canEnterPlinko = true;
         }
-        _clickedOnFactory = true;
     }
 
     private void Update()
@@ -80,12 +91,11 @@ public class FactoryBoundry : MonoBehaviour
 
             if (hit != null && hit.collider != null)
             {
-                if(hit.collider.gameObject == this.gameObject)
+                if (hit.collider.gameObject == this.gameObject && hasPlacedFactory)
                 {
+                    Debug.Log(this.gameObject.name);
                     _clickedOnFactory = true;
                 }
-
-
             }
             else
             {
@@ -94,16 +104,78 @@ public class FactoryBoundry : MonoBehaviour
 
         }
 
-        if (_hasPlacedFactory && _clicked && _clickedOnFactory)
+        if (hasPlacedFactory && _clicked && _clickedOnFactory && canEnterPlinko)
         {
+            _clickedOnFactory = false;
+            canEnterPlinko = false;
             SceneManager.LoadScene("Plinko");
         }
+
+        if (startCoroutine)
+        {
+            StartCoroutine(IncreaseVariableCoroutine());
+            startCoroutine = false;
+        }
+
+        if (subtractTime)
+        {
+            timeBeforeAllowPlinko = subtractTimeFromBeingInOtherScenes(TimeBetweenScenes.instance.saver);
+            subtractTime = false;
+        }
+
+        if (!canEnterPlinko &&  hasPlacedFactory)
+        {
+            timeBeforeAllowPlinko -= 1 * Time.deltaTime;
+        }
+
+        if(timeBeforeAllowPlinko <= 0)
+        {
+            canEnterPlinko = true;
+            timeBeforeAllowPlinko = 20;
+        }
+        if (hasPlacedFactory)
+        {
+            //Debug.Log(timeBeforeAllowPlinko);
+        }
+        plinkoTimerDisplay.text = timeBeforeAllowPlinko.ToString();
     }
+
+    private float subtractTimeFromBeingInOtherScenes(float time)
+    {
+        var newTime = timeBeforeAllowPlinko - time;
+        if(canEnterPlinko)
+        {
+            return 20;
+        }
+        if (newTime <= 0)
+        {
+            canEnterPlinko = true;
+            return 20;
+        }
+        else
+        {
+            return newTime;
+        }
+    }
+
 
     //Coroutine enforces a half second delay to avoid the bug of creating a new factory and getting taken to the Plinko scene immediately.
     IEnumerator AllowFactoryToBePlacedAfterDelayCoroutine()
     {
-        yield return new WaitForSeconds(.5f);
-        _hasPlacedFactory = true;
+        yield return new WaitForSeconds(1f);
+        hasPlacedFactory = true;
+    }
+
+    private IEnumerator IncreaseVariableCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(timeBetweenGain);
+
+            if (hasPlacedFactory)
+            {
+                CurrencyManager.instance.TotalCurrency += increaseRate;
+            }
+        }
     }
 }

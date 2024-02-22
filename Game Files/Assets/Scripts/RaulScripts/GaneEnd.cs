@@ -10,12 +10,12 @@ public class GaneEnd : MonoBehaviour
     void Update()
     {
         for(int i = 0; i < this.transform.childCount; i++) {
-            if(this.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().enabled == true)
+            if(this.transform.GetChild(i).gameObject.tag == "FactoryPlots" && this.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().enabled == true)
             {
                 break;
             }
 
-            if(i == this.transform.childCount - 1)
+            if(this.transform.GetChild(i).gameObject.tag == "FactoryPlots" && i == this.transform.childCount - 2)
             {
                 SceneManager.LoadScene("EndScene");
             }
