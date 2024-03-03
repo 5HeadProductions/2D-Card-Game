@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5890513318363502722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Click
+  m_EditorClassIdentifier: 
+  Path: event:/Click
+  Guid:
+    Data1: 1601433762
+    Data2: 1083232531
+    Data3: -1966452038
+    Data4: -298721482
+  Banks:
+  - {fileID: -5630173330453294217}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5630173330453294217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: ../../../Fmod/2D Card Game Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638427608560844500
+  lastModified: 638445655770910086
   FileSizes:
   - Name: Desktop
-    Value: 38784
+    Value: 41312
   Exists: 1
 --- !u!114 &-4906099663051409419
 MonoBehaviour:
@@ -62,7 +89,7 @@ MonoBehaviour:
   Path: ../../../Fmod/2D Card Game Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638427608557531842
+  lastModified: 638445655768795289
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -116,12 +143,13 @@ MonoBehaviour:
   - {fileID: -2839932784834046467}
   - {fileID: 3589868379104245117}
   - {fileID: 3013455021830956992}
+  - {fileID: -5890513318363502722}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4857568482950550052}
   StringsBanks:
   - {fileID: 3153144881525877086}
-  cacheTime: 638427608560844500
+  cacheTime: 638445655770910086
   cacheVersion: 131616
 --- !u!114 &1171469699104139318
 MonoBehaviour:
@@ -192,10 +220,10 @@ MonoBehaviour:
   Path: ../../../Fmod/2D Card Game Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638427608557562918
+  lastModified: 638445655768825320
   FileSizes:
   - Name: Desktop
-    Value: 994
+    Value: 1042
   Exists: 1
 --- !u!114 &3589868379104245117
 MonoBehaviour:

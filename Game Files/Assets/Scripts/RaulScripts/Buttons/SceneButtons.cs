@@ -24,16 +24,20 @@ public class SceneButtons : MonoBehaviour
 
     public void NavigateToFactoryScene()
     {
+        AudioManager.instance.PlayOneShot(AudioManager.instance.clickSFX, this.transform.position);
         SceneManager.LoadScene(factorySceneName);
     }
 
     public void NavigateToCardCraftingScene()
     {
+        AudioManager.instance.PlayOneShot(AudioManager.instance.clickSFX, this.transform.position);
         SceneManager.LoadScene(cardCraftingSceneName);
     }
 
     public void purchaseMenuScene()
     {
+        AudioManager.instance.PlayOneShot(AudioManager.instance.clickSFX, this.transform.position);
+
         SceneManager.LoadScene(purchaseMenuSceneName);
     }
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6dc6a185a2ba94584e6911f6440937, type: 3}
+  m_Name: BackToMainMenu
+  m_EditorClassIdentifier: 
+  objectToBeCarriedBetweenAllScenes: {fileID: 2167101132628496637, guid: 261d99ac031bf204a90d56b130e8c39d, type: 3}
+  sceneObjectIsActiveIn: CardCrafting
+  positionOfObject: {x: 0, y: 0, z: 0}
+  nameOfParent: MainCanvas
+  secondarySceneObjectIsActiveIn: MenuFactory

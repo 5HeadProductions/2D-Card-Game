@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 444, y: -209}
+  m_AnchoredPosition: {x: 339, y: -209}
   m_SizeDelta: {x: 190.2, y: 60.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274501746
@@ -787,9 +787,21 @@ PrefabInstance:
       value: FactoryPurchasing
       objectReference: {fileID: 0}
     - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: unbreakables.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: factoryParent.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: unbreakables.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b40522d2cd162a459d708912a368283, type: 2}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: unbreakables.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: a039cb85d7ffd634c8f2361fac0188e9, type: 2}
     - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: factoryParent.Array.data[0]
       value: 
@@ -798,6 +810,14 @@ PrefabInstance:
       propertyPath: factoryParent.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: a039cb85d7ffd634c8f2361fac0188e9, type: 2}
+    - target: {fileID: 1057939533777431548, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: factoryParent.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 690430fc3eabdda408d398a92928338d, type: 2}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: clickSFX.Path
+      value: event:/Click
+      objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopLeft.Path
       value: event:/TopLeft
@@ -805,6 +825,22 @@ PrefabInstance:
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: bronzeTopRight.Path
       value: event:/TopRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: clickSFX.Guid.Data1
+      value: 1601433762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: clickSFX.Guid.Data2
+      value: 1083232531
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: clickSFX.Guid.Data3
+      value: -1966452038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
+      propertyPath: clickSFX.Guid.Data4
+      value: -298721482
       objectReference: {fileID: 0}
     - target: {fileID: 4118177364820331169, guid: a4b3ddd31cb449642bf6232f336292b6, type: 3}
       propertyPath: currencyGainSFX.Path
@@ -973,9 +1009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Purchase Menu
-
-'
+  m_text: Store
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -87142,6 +87176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8329497711604261499, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8422594176837278254, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -87265,8 +87303,8 @@ Transform:
   m_GameObject: {fileID: 1888202539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.23816, y: 0, z: 0}
+  m_LocalScale: {x: 0.7391251, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1537695644}

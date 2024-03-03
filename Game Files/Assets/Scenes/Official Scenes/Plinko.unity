@@ -711,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &61261858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 1
+  _rewardAmount: 20
 --- !u!1 &110344951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 1
+  _rewardAmount: 20
 --- !u!1 &140270612
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,6 +7163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &1088338323
 GameObject:
   m_ObjectHideFlags: 0
@@ -7437,6 +7441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &1144821773
 GameObject:
   m_ObjectHideFlags: 0
@@ -8246,6 +8251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &1234600786
 GameObject:
   m_ObjectHideFlags: 0
@@ -8613,6 +8619,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5925374681653745765, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -324
+      objectReference: {fileID: 0}
     - target: {fileID: 5995126004730873999, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
       propertyPath: m_Name
       value: MainCanvas
@@ -8620,6 +8630,10 @@ PrefabInstance:
     - target: {fileID: 5995126004730873999, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329497711604261499, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8422594176837278254, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
       propertyPath: m_Pivot.x
@@ -12249,6 +12263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 1
+  _rewardAmount: 20
 --- !u!1 &1665399693
 GameObject:
   m_ObjectHideFlags: 0
@@ -12393,6 +12408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &1694969336
 GameObject:
   m_ObjectHideFlags: 0
@@ -15364,6 +15380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 1
+  _rewardAmount: 20
 --- !u!1 &2000492969
 GameObject:
   m_ObjectHideFlags: 0
@@ -15641,6 +15658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 0
+  _rewardAmount: 20
 --- !u!1 &2027208294
 GameObject:
   m_ObjectHideFlags: 0
@@ -16656,6 +16674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isReward: 1
+  _rewardAmount: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

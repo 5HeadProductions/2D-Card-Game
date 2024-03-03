@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 1001541363890864207}
   - component: {fileID: 6825749545822544138}
   - component: {fileID: 1057939533777431548}
+  - component: {fileID: 6432352126465835551}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -158,4 +159,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneObjectIsActiveIn: FactoryPurchase
-  factoryParent: {fileID: 0}
+  factoryParent:
+  - {fileID: 0}
+--- !u!114 &6432352126465835551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8483577348977787272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fae5ae41c0e2e4b92a32a3ce33e1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

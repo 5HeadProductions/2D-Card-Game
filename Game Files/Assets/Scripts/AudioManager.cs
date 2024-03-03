@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
 
     public EventReference currencyGainSFX;
+    public EventReference clickSFX;
 
     private void Awake()
     {

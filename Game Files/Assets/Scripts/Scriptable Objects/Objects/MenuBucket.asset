@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToBeCarriedBetweenAllScenes: {fileID: 3469868373543741449, guid: 11d832832268f3a42b9d0503a86fb903, type: 3}
   sceneObjectIsActiveIn: MenuFactory
-  positionOfObject: {x: 1, y: 1, z: 1}
+  positionOfObject: {x: -6.86, y: -4.54, z: 0}
+  nameOfParent: 
+  secondarySceneObjectIsActiveIn: 

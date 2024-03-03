@@ -8,4 +8,6 @@ public class Unbreakable : ScriptableObject
     public GameObject objectToBeCarriedBetweenAllScenes;
     public string sceneObjectIsActiveIn;
     public Vector3 positionOfObject;
+    public string nameOfParent;
+    public string secondarySceneObjectIsActiveIn;
 }

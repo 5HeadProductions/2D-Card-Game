@@ -16,18 +16,28 @@ public class rewardBuckets : MonoBehaviour
     [Tooltip("Buckets that will give a benefit should have this checked")]
     private bool _isReward;
 
+    [SerializeField]
+    private int _rewardAmount;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (_isReward)
         {
-            CurrencyManager.instance.TotalCurrency++;
-            SceneManager.LoadScene("FactoryPurchasing");
+            CurrencyManager.instance.TotalCurrency += _rewardAmount;
+            
         }
         else
         {
-            CurrencyManager.instance.TotalCurrency--;
-            SceneManager.LoadScene("FactoryPurchasing");
+            if(CurrencyManager.instance.TotalCurrency - _rewardAmount < 0)
+            {
+                CurrencyManager.instance.TotalCurrency = 0;
+            }
+            else
+            {
+                CurrencyManager.instance.TotalCurrency -= _rewardAmount;
+            }
         }
+        SceneManager.LoadScene("FactoryPurchasing");
     }
 
 }
