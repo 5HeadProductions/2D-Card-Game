@@ -14,10 +14,31 @@ using UnityEngine.SceneManagement;
  */
 public class FactoryBoundry : MonoBehaviour
 {
+    public bool hasPlacedFactory = false;
+    public bool startCoroutine;
+    public bool subtractTime;
+
     private bool _clicked = false;
     private string _purchasedFactoryName;
-    public bool hasPlacedFactory = false;
+    private bool canEnterPlinko = false;
     private bool _clickedOnFactory = false;
+    private float timeBeforeAllowPlinko;
+
+    [SerializeField]
+    [Tooltip("The text component that will display the time before the player can access plinko.")]
+    TextMeshProUGUI plinkoTimerDisplay;
+
+    [SerializeField]
+    [Tooltip("How much currency the player should receive for having the factory placed.")]
+    int increaseRate;
+
+    [SerializeField]
+    [Tooltip("Time in seconds that should pass before we give the player more currency for the factory.")]
+    int timeBetweenGain;
+
+    [SerializeField]
+    [Tooltip("How much time the player should wait each time they play plinko before they can play again")]
+    int plinkoAccessTime = 20;
 
     [SerializeField]
     [Tooltip("The factory to be activated when the plot is clicked.")]
@@ -26,15 +47,6 @@ public class FactoryBoundry : MonoBehaviour
     [SerializeField]
     [Tooltip("The factory that has been purchased, the gameobject")]
     GameObject purchasedFactory;
-
-    public int increaseRate;
-    public int timeBetweenGain;
-    public bool startCoroutine;
-    public float timeBeforeAllowPlinko;
-    public bool subtractTime;
-    public bool canEnterPlinko = false;
-    public TextMeshProUGUI plinkoTimerDisplay;
-
 
     private void Start()
     {
@@ -131,12 +143,9 @@ public class FactoryBoundry : MonoBehaviour
         if(timeBeforeAllowPlinko <= 0)
         {
             canEnterPlinko = true;
-            timeBeforeAllowPlinko = 20;
+            timeBeforeAllowPlinko = plinkoAccessTime;
         }
-        if (hasPlacedFactory)
-        {
-            //Debug.Log(timeBeforeAllowPlinko);
-        }
+
         plinkoTimerDisplay.text = timeBeforeAllowPlinko.ToString();
     }
 
@@ -145,12 +154,12 @@ public class FactoryBoundry : MonoBehaviour
         var newTime = timeBeforeAllowPlinko - time;
         if(canEnterPlinko)
         {
-            return 20;
+            return plinkoAccessTime;
         }
         if (newTime <= 0)
         {
             canEnterPlinko = true;
-            return 20;
+            return plinkoAccessTime;
         }
         else
         {
@@ -166,6 +175,7 @@ public class FactoryBoundry : MonoBehaviour
         hasPlacedFactory = true;
     }
 
+    //Waits the timeBetweenGain in seconds before giving the player currency and verifys the player has a factory first
     private IEnumerator IncreaseVariableCoroutine()
     {
         while (true)

@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Official Scenes/FactoryPurchasing.unity
+    guid: ec2cfe568e955724184fe13c879669d1
   - enabled: 1
     path: Assets/Scenes/Official Scenes/CardCrafting.unity
     guid: 611f7f5e8f383e540904356a827ea36f
-  - enabled: 1
-    path: Assets/Scenes/Official Scenes/FactoryPurchasing.unity
-    guid: ec2cfe568e955724184fe13c879669d1
   - enabled: 1
     path: Assets/Scenes/Official Scenes/MenuFactory.unity
     guid: 61730a9ebff4f7641a5c374e0c28688e

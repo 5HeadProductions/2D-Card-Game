@@ -296,6 +296,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5925374681653745765, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -326
+      objectReference: {fileID: 0}
     - target: {fileID: 5995126004730873999, guid: bc4c2d094dad1e8459a067a94e8cba9c, type: 3}
       propertyPath: m_Name
       value: MainCanvas

@@ -27,14 +27,14 @@ RectTransform:
   m_GameObject: {fileID: 404190958914190551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.5, y: -62}
+  m_AnchoredPosition: {x: -365.33, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3426308213589231496
@@ -161,14 +161,14 @@ RectTransform:
   m_GameObject: {fileID: 2018125766165878656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 502, y: -62}
+  m_AnchoredPosition: {x: 371.83, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7800810045771979832
@@ -295,14 +295,14 @@ RectTransform:
   m_GameObject: {fileID: 2396380971676138202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.5, y: 218}
+  m_AnchoredPosition: {x: -365.33, y: 218}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &264949274117011315
@@ -545,14 +545,14 @@ RectTransform:
   m_GameObject: {fileID: 3275984825528872826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -62}
+  m_AnchoredPosition: {x: -11.715, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9043337664793943876
@@ -679,14 +679,14 @@ RectTransform:
   m_GameObject: {fileID: 3559494618477540100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.5, y: 69}
+  m_AnchoredPosition: {x: -365.33, y: 69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7222227068008387152
@@ -813,14 +813,14 @@ RectTransform:
   m_GameObject: {fileID: 3586018584843559084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 69}
+  m_AnchoredPosition: {x: -11.715, y: 69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6933129513980668389
@@ -947,14 +947,14 @@ RectTransform:
   m_GameObject: {fileID: 4497274510756561547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: 69}
+  m_AnchoredPosition: {x: 186.33, y: 69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7865673869936914305
@@ -1081,14 +1081,14 @@ RectTransform:
   m_GameObject: {fileID: 4919863478563403690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 502, y: 69}
+  m_AnchoredPosition: {x: 371.83, y: 69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9034988859649892190
@@ -1215,14 +1215,14 @@ RectTransform:
   m_GameObject: {fileID: 5149160409349648651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 502, y: 218}
+  m_AnchoredPosition: {x: 371.83, y: 218}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3585023688907685143
@@ -1349,14 +1349,14 @@ RectTransform:
   m_GameObject: {fileID: 5177966872477724425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252, y: -62}
+  m_AnchoredPosition: {x: -185.39, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7112514097971018907
@@ -1483,14 +1483,14 @@ RectTransform:
   m_GameObject: {fileID: 6781353911187754286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: -62}
+  m_AnchoredPosition: {x: 186.33, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5290882368572112197
@@ -1617,14 +1617,14 @@ RectTransform:
   m_GameObject: {fileID: 6921681874977683061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 218}
+  m_AnchoredPosition: {x: -1.3687, y: 218}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &912681546784558777
@@ -1751,14 +1751,14 @@ RectTransform:
   m_GameObject: {fileID: 7994342731103861296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252, y: 69}
+  m_AnchoredPosition: {x: -185.39, y: 69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8483127635305795934
@@ -1885,14 +1885,14 @@ RectTransform:
   m_GameObject: {fileID: 8392637743760216476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: 218}
+  m_AnchoredPosition: {x: 186.33, y: 218}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6523975815924152908
@@ -2019,14 +2019,14 @@ RectTransform:
   m_GameObject: {fileID: 8652602589366526351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73900735, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6131362715352464479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252, y: 218}
+  m_AnchoredPosition: {x: -185.39, y: 218}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3221261592889501978
@@ -2152,8 +2152,8 @@ Transform:
   m_GameObject: {fileID: 9060485550742849746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11304362, y: -1.2397282, z: -0.057787184}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 112.19, y: -1.2397, z: -0.057787184}
+  m_LocalScale: {x: 0.76637775, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6936231421685693864}
@@ -2248,7 +2248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2330,7 +2334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2412,7 +2420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2494,7 +2506,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2576,7 +2592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2658,7 +2678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2740,7 +2764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2822,7 +2850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2904,7 +2936,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -2986,7 +3022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -3068,7 +3108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -3150,7 +3194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -3236,7 +3284,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -3318,7 +3370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
@@ -3400,7 +3456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: timeBetweenGain
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
+      propertyPath: plinkoAccessTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1322839680904934297, guid: 0b2baf6dea4c18c4e8f26b07933c8d0d, type: 3}
       propertyPath: plinkoTimerDisplay
